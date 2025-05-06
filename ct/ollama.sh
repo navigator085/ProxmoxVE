@@ -9,9 +9,9 @@ APP="Ollama"
 var_tags="${var_tags:-ai}"
 var_cpu="${var_cpu:-4}"
 var_ram="${var_ram:-4096}"
-var_disk="${var_disk:-35}"
-var_os="${var_os:-ubuntu}"
-var_version="${var_version:-24.04}"
+var_disk="${var_disk:-50}"
+var_os="${var_os:-debian}"
+var_version="${var_version:-12}"
 
 header_info "$APP"
 variables
