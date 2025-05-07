@@ -26,7 +26,8 @@ function update_script() {
     msg_error "No Ollama Installation Found!"
     exit
   fi
-  RELEASE=$(curl -fsSL https://api.github.com/repos/ollama/ollama/releases/latest | grep "tag_name" | awk -F '"' '{print $4}')
+#  RELEASE=$(curl -fsSL https://api.github.com/repos/ollama/ollama/releases/latest | grep "tag_name" | awk -F '"' '{print $4}')
+  RELEASE=v0.6.8
   if [[ ! -f /opt/Ollama_version.txt ]] || [[ "${RELEASE}" != "$(cat /opt/Ollama_version.txt)" ]]; then
     if [[ ! -f /opt/Ollama_version.txt ]]; then
       touch /opt/Ollama_version.txt
